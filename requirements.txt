@@ -1,17 +1,14 @@
 absl-py==0.13.0
 
 albumentations==0.4.6
-anaconda-client==1.7.2
-anaconda-navigator==2.0.3
+
 
 appdirs==1.4.4
 argh==0.26.2
 
 astunparse==1.6.3
 
-atomicwrites==1.4.0
 
-audioread==2.1.9
 
 backports.weakref==1.0.post1
 
