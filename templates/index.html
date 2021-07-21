@@ -1,0 +1,66 @@
+{% extends "base.html" %} {% block content %}
+<html>
+<head>
+<style>
+h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+h5 {
+  text-align: center;
+}
+
+label {
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+        padding-top: 5px;
+        width: 190px;
+        margin-left: 450px;
+        margin-right: 100px;
+      }
+h3 {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+
+<h2>RICE LEAF DISEASE CLASSIFIER</h2>
+<h5>(Bacterial Leaf Blight, Brown Spot or Leaf Smut)</h5>
+<div>
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label for="imageUpload" class="upload-label">
+            Choose...
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+        <p class="w3-text-teal"><p style="margin-left:190px" class="w3-text-teal">For best results please place the rice leaf
+		flat against a white background before taking the picture.</p></p>
+    </form>
+
+    <div class="image-section" style="width:800px; margin-left:420px;">
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+        <div>
+            <button type="button" style=" margin-left:70px;" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+                    
+        </div>
+    </div>
+
+    <div class="loader" style="margin-left:530px"></div>
+
+    <h3 id="result">
+        <span> </span>
+    </h3>
+<div class='w3-padding'>
+	<p class='w3-round w3-margin w3-margin-bottom w3-text-teal w3-small space-letters'>
+	Please note:<br> This is just a prototype.</p>
+</div> 
+
+</div>
+
+{% endblock %}
