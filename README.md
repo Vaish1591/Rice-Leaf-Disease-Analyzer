@@ -1,1 +1,1 @@
-# Cotton-Disease-Prediction-Deep-Learning
+# Rice-Disease-Prediction-Deep-Learning
